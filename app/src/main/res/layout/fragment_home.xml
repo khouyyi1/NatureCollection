@@ -9,14 +9,14 @@
     <ImageView
         android:layout_width="150dp"
         android:layout_height="200dp"
-        android:src="@drawable/image_1"/>
+        android:src="@drawable/trending1"/>
     <ImageView
         android:layout_width="150dp"
         android:layout_height="200dp"
-        android:src="@drawable/image_2"/>
+        android:src="@drawable/trending2"/>
     <ImageView
         android:layout_width="150dp"
         android:layout_height="200dp"
-        android:src="@drawable/image_3"/>
+        android:src="@drawable/trending3"/>
 
 </LinearLayout>

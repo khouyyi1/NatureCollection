@@ -2,19 +2,17 @@ package com.anasskhouyyi.naturecollection
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
-import com.anasskhouyyi.naturecollection.fragments.HomeFragment
-
+import androidx.activity.compose.setContent
+import androidx.compose.material3.Text
 
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
-        //injection deu fragement dans la boite (fragement_container)
+        setContent {
+            Text("Hello world!")
+        }
 
-        val transaction = fragmentManager.beginTransaction()
-        transaction.replace(R.id.fragment_container, HomeFragment())
-        transaction.addToBackStack(null)
-        transaction.commit()
+
     }
 }
